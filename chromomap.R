@@ -19,7 +19,7 @@ prs[,4] <- as.numeric(prs[,4])
 
 # run ChromoMap
 
-pr.cm <- chromoMap(ch.files = list(chromfile), data.files = list(prs), title = "PR Proteins Across the Royal Royce Genome", data_based_color_map = TRUE, data_type = "categorical", legend = TRUE, lg_x = 35, lg_y = 515, n_win.factor = 2, export.options = TRUE)
+pr.cm <- chromoMap(ch.files = list(chromfile), data.files = list(prs), title = "PR Proteins Across the Royal Royce Genome", data_based_color_map = TRUE, data_type = "categorical", legend = TRUE, lg_x = 35, lg_y = 515, discrete.domain = list(c("PR1", "PR2", "PR3", "PR4", "PR5", "PR6", "PR7", "PR8", "PR9", "PR10", "PR11", "PR12", "PR14", "PR16", "PR17", "PR18")), data_colors = list(c("royalblue1", "darkolivegreen4", "tan", "turquoise", "lightpink3", "azure2", "lavenderblush1", "burlywood2", "lightblue2", "salmon2", "palegreen2", "thistle", "tomato3", "goldenrod1", "seashell3", "slateblue")), n_win.factor = 2, export.options = TRUE)
 
 # save figures as html files
 saveWidget(pr.cm, "chromoMap_PRs.html")
