@@ -1,0 +1,9 @@
+channels:
+ - conda-forge
+ - bioconda
+ - defaults
+dependencies:
+ - interproscan
+ - r-chromomap
+ - r-tidyverse
+ - r-reshape
