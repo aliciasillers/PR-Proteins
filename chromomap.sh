@@ -12,6 +12,6 @@
 #SBATCH --time=1-00:00:00
 
 module load conda/latest
-conda activate nlrenv
+conda activate pr
 
 Rscript --vanilla --verbose chromomap.R
