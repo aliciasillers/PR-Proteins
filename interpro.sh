@@ -14,5 +14,5 @@
 module load conda/latest
 conda activate pr
 
-interproscan.sh -f TSV -appl Pfam -i align_p_in.fa -b prs.interpro
+interproscan.sh -f TSV -appl CDD,Gene3D,PANTHER,Pfam,PIRSF,SMART -i align_p_in.fa -b prs.interpro
 

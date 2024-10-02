@@ -12,7 +12,7 @@ chromfile$V2 <- as.numeric(chromfile$V2)
 chromfile$V3 <- as.numeric(chromfile$V3)
 
 # annotation file
-prs <- read.delim("RR_PRs2.bed", sep="\t", header = FALSE)
+prs <- read.delim("RR_PRs.bed", sep="\t", header = FALSE)
 prs <- as.data.frame(cbind(prs[,4], prs[,1], prs[,2], prs[,3], prs[,5]))
 prs[,3] <- as.numeric(prs[,3])
 prs[,4] <- as.numeric(prs[,4])

@@ -13,4 +13,4 @@
 
 module load mafft
 
-mafft --auto align_p_in.fa > pr_p_alignment.fa
+mafft --auto PR_all.fa > pr_p_alignment.fa

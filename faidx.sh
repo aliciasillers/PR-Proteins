@@ -13,6 +13,6 @@
 
 module load samtools
 
-samtools faidx -r ids2.txt ../Genome/farr1.protein.fa -o PRs.protein.fa
+#samtools faidx -r ids2.txt ../Genome/farr1.protein.fa -o PRs.protein.fa
 
-
+samtools faidx -r ids.txt ../Genome/farr1.protein.fa -o PRs.protein.subset.fa
