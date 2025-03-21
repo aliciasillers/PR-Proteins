@@ -7,3 +7,4 @@ dependencies:
  - r-chromomap
  - r-tidyverse
  - r-reshape
+ - r-purrr
