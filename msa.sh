@@ -11,6 +11,8 @@
 #SBATCH --mail-user=asillers@ucdavis.edu # Email to which notifications will be$
 #SBATCH --time=1-00:00:00
 
+#Usage: msa.sh INFILE OUTFILE
+
 module load mafft
 
-mafft --auto PR_all.fa > pr_p_alignment.fa
+mafft --auto $1 > $2
